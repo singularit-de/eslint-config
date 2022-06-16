@@ -5,6 +5,7 @@
   "main": "index.js",
   "packageManager": "pnpm@7.1.0",
   "scripts": {
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "keywords": [],
   "author": "singularIT GmbH",
