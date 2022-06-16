@@ -26,5 +26,8 @@
       }
     ],
     "npmPublish": true
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
