@@ -1,0 +1,1 @@
+# @singularit/eslint-config
