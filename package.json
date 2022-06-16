@@ -25,6 +25,6 @@
         "prerelease": true
       }
     ],
-    "npmPublish": false
+    "npmPublish": true
   }
 }
