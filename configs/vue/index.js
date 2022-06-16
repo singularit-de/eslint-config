@@ -15,7 +15,6 @@ module.exports = {
     ],
     extends: [
         'plugin:vue/vue3-recommended',
-        // TODO: @singularit/eslint-plugin-ts
     ],
     rules: {}
 }
