@@ -26,6 +26,7 @@
   "release": {
     "branches": [
       "test-semantic-release"
-    ]
+    ],
+    "npmPublish": false
   }
 }
