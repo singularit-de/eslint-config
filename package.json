@@ -5,8 +5,6 @@
   "main": "index.js",
   "packageManager": "pnpm@7.1.0",
   "scripts": {
-    "semantic-release": "pnpm -r --workspace-concurrency=1 exec -- npx --no-install semantic-release -e semantic-release-monorepo",
-    "release": "bumpp package.json configs/*/package.json --commit --push --tag"
   },
   "keywords": [],
   "author": "singularIT GmbH",
