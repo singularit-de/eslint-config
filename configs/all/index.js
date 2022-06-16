@@ -1,6 +1,6 @@
 module.exports = {
     extends: [
-        // extend other configs
+        '@singularit/eslint-config-vue'
     ],
 }
 

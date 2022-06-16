@@ -1,21 +1,16 @@
+const basic = require('@singularit/eslint-config-basic')
+
 module.exports = {
-    overrides: [
-        {
-            files: ['*.vue'],
-            parser: 'vue-eslint-parser',
-            parserOptions: {
-                parser: '@typescript-eslint/parser',
-            },
-            rules: {
-                'no-unused-vars': 'off',
-                'no-undef': 'off',
-                '@typescript-eslint/no-unused-vars': 'off',
-            },
-        },
-    ],
     extends: [
-        'plugin:vue/vue3-recommended',
-        // TODO: @singularit/eslint-plugin-ts
+        '@singularit/eslint-config-basic',
+        'plugin:import/typescript',
+        'plugin:@typescript-eslint/recommended',
     ],
+    settings: {
+        'import/resolver': {
+            node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] },
+        },
+    },
+    overrides: basic.overrides,
     rules: {}
 }
