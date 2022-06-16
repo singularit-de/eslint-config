@@ -1,11 +1,11 @@
 {
   "name": "@singularit/eslint-config-monorepo",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "private": true,
   "main": "index.js",
+  "packageManager": "pnpm@7.1.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release"
+    "release": "bumpp package.json configs/*/package.json --commit --push --tag"
   },
   "keywords": [],
   "author": "singularIT GmbH",
@@ -14,8 +14,9 @@
     "configs/*"
   ],
   "devDependencies": {
-    "semantic-release": "^19.0.3",
-    "semantic-release-monorepo": "^7.0.5"
+    "bumpp": "^7.1.1",
+    "eslint": "^8.16.0",
+    "typescript": "^4.7.2"
   },
   "repository": {
     "type": "git",
