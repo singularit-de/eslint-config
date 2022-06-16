@@ -7,7 +7,7 @@
     "eslint-config"
   ],
   "dependencies": {
-    "@singularit/eslint-config-vue": "workspace:*",
+    "@singularit/eslint-config-vue": "*",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
