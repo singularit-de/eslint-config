@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "README.md"
   ],
   "scripts": {
     "release": "semantic-release -e semantic-release-monorepo"
