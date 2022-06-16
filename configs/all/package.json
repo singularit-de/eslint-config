@@ -2,6 +2,7 @@
   "name": "@singularit/eslint-config",
   "version": "0.0.0",
   "description": "",
+  "private": false,
   "main": "index.js",
   "keywords": [
     "eslint-config"
@@ -42,5 +43,8 @@
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
-  "homepage": "https://github.com/singularit-de/eslint-config"
+  "homepage": "https://github.com/singularit-de/eslint-config",
+  "publishConfig": {
+    "access": "public"
+  }
 }

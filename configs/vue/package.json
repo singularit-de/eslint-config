@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
+  "private": false,
   "files": [
     "index.js",
     "README.md"
@@ -29,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/singularit-de/eslint-config/issues"
   },
-  "homepage": "https://github.com/singularit-de/eslint-config#readme"
+  "homepage": "https://github.com/singularit-de/eslint-config#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
