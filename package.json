@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "main": "index.js",
-  "packageManager": "pnpm@7.1.0",
   "keywords": [],
   "author": "singularIT GmbH",
   "license": "MIT",
@@ -11,7 +10,6 @@
     "configs/*"
   ],
   "devDependencies": {
-    "bumpp": "^7.1.1",
     "eslint": "^8.16.0",
     "typescript": "^4.7.2"
   },
@@ -21,7 +19,7 @@
   },
   "release": {
     "branches": [
-      "test-semantic-release"
+      "main"
     ],
     "npmPublish": false
   }
