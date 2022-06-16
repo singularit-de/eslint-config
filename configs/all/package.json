@@ -6,6 +6,9 @@
   "keywords": [
     "eslint-config"
   ],
+  "scripts": {
+    "release": "semantic-release -e semantic-release-monorepo"
+  },
   "dependencies": {
     "@singularit/eslint-config-vue": "*",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
@@ -20,6 +23,8 @@
     "eslint-plugin-vue": "^9.0.1",
     "eslint-plugin-yml": "^1.0.0",
     "jsonc-eslint-parser": "^2.1.0",
+    "semantic-release": "^19.0.3",
+    "semantic-release-monorepo": "^7.0.5",
     "yaml-eslint-parser": "^1.0.1"
   },
   "devDependencies": {

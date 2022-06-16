@@ -6,11 +6,16 @@
   "files": [
     "index.js"
   ],
+  "scripts": {
+    "release": "semantic-release -e semantic-release-monorepo"
+  },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "eslint-plugin-vue": "^9.0.1"
+    "eslint-plugin-vue": "^9.0.1",
+    "semantic-release": "^19.0.3",
+    "semantic-release-monorepo": "^7.0.5"
   },
   "devDependencies": {
     "eslint": "^8.16.0"
