@@ -36,7 +36,8 @@
     "url": "https://github.com/singularit-de/eslint-config/issues"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "README.md"
   ],
   "peerDependencies": {
     "eslint": ">=7.4.0"
