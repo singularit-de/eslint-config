@@ -2,7 +2,6 @@
   "name": "@singularit/eslint-config",
   "version": "0.0.0",
   "description": "",
-  "private": false,
   "main": "index.js",
   "keywords": [
     "eslint-config"
@@ -38,7 +37,7 @@
   },
   "files": [
     "index.js",
-    "README.md"
+    "*.md"
   ],
   "peerDependencies": {
     "eslint": ">=7.4.0"
