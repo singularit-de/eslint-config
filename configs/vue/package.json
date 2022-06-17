@@ -3,10 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "private": false,
   "files": [
     "index.js",
-    "README.md"
+    "*.md"
   ],
   "scripts": {
     "release": "semantic-release -e semantic-release-monorepo"
