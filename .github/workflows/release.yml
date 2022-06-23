@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.13.1
+      - run: npm ci
       - name: 🚀 Release @singularit/eslint-config-basic
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
