@@ -25,7 +25,6 @@ npm install @singularit/eslint-config -D
 }
 ```
 
-
 ### Add script for package.json
 For example:
 
