@@ -15,10 +15,27 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.13.1
-      - run: npm ci
-      - name: Release
+      - name: 🚀 Release @singularit/eslint-config-basic
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm run release --workspaces
+          npx -w @singularit/eslint-config-basic semantic-release -e semantic-release-monorepo
+      - name: 🚀 Release @singularit/eslint-config-typescript
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npx -w @singularit/eslint-config-typescript semantic-release -e semantic-release-monorepo
+      - name: 🚀 Release @singularit/eslint-config-vue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npx -w @singularit/eslint-config-vue semantic-release -e semantic-release-monorepo
+      - name: 🚀 Release @singularit/eslint-config
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npx -w @singularit/eslint-config semantic-release -e semantic-release-monorepo

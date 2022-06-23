@@ -3,10 +3,3 @@ module.exports = {
         '@singularit/eslint-config-vue'
     ],
 }
-
-
-
-
-
-
-// Language: javascript
