@@ -2,12 +2,12 @@
 
 ## Configs
 
-| Config                                     | Version                                                                                                                                  | Description |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| [`@singularit/eslint-config`]()            | [![npm](https://img.shields.io/npm/v/singularit/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config) | TODO        |
-| [`@singularit/eslint-config-basic`]()      | [![npm](https://img.shields.io/npm/v/singularit/eslint-config-basic?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-basic) | TODO        |
-| [`@singularit/eslint-config-typescript`]() | [![npm](https://img.shields.io/npm/v/singularit/eslint-config-typescript?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-typescript) | TODO        |
-| [`@singularit/eslint-config-vue`]()        | [![npm](https://img.shields.io/npm/v/singularit/eslint-config-vue?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-vue) | TODO        |
+| Config                                     | Version                                                                                                                                                         | Description |
+|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| [`@singularit/eslint-config`]()            | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config)                       | TODO        |
+| [`@singularit/eslint-config-basic`]()      | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-basic?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-basic)           | TODO        |
+| [`@singularit/eslint-config-typescript`]() | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-typescript?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-typescript) | TODO        |
+| [`@singularit/eslint-config-vue`]()        | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-vue?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-vue)               | TODO        |
 
 ## Usage
 
