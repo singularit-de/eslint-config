@@ -25,7 +25,10 @@ jobs:
         run: |
           npx --workspace=@singularit/eslint-config-basic semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-basic in workspaces
-        run: npm up @singularit/eslint-config-basic --save
+        run: |
+          npm up @singularit/eslint-config-basic --save
+          echo 'git status'
+          git status
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
@@ -37,7 +40,10 @@ jobs:
         run: |
           npx --workspace=@singularit/eslint-config-typescript semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-typescript in workspaces
-        run: npm up @singularit/eslint-config-typescript --save
+        run: |
+          npm up @singularit/eslint-config-typescript --save
+          echo 'git status'
+          git status
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
@@ -49,7 +55,10 @@ jobs:
         run: |
           npx --workspace=@singularit/eslint-config-vue semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-vue in workspaces
-        run: npm up @singularit/eslint-config-vue --save
+        run: |
+          npm up @singularit/eslint-config-vue --save
+          echo 'git status'
+          git status
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
@@ -61,7 +70,10 @@ jobs:
         run: |
           npx --workspace=@singularit/eslint-config semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config in workspaces
-        run: npm up @singularit/eslint-config --save
+        run: |
+          npm up @singularit/eslint-config --save
+          echo 'git status'
+          git status
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions

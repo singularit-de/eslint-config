@@ -10,7 +10,8 @@
   },
   "keywords": [
     "eslint-config",
-    "eslint"
+    "eslint",
+    "singularIT"
   ],
   "main": "index.js",
   "files": [
