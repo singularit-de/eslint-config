@@ -1,7 +1,7 @@
 {
   "name": "@singularit/eslint-config",
   "version": "0.0.0",
-  "description": "",
+  "description": "@singularit/eslint-config",
   "author": "singularIT GmbH <info@singular-it.de> (https://singular-it.de)",
   "license": "MIT",
   "homepage": "https://github.com/singularit-de/eslint-config",
