@@ -2,37 +2,38 @@
   "name": "@singularit/eslint-config-typescript",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
-  "keywords": [
-    "eslint-config"
-  ],
-  "scripts": {
-    "release": "semantic-release -e semantic-release-monorepo"
-  },
-  "dependencies": {
-    "@singularit/eslint-config-basic": "*",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
-    "semantic-release": "^19.0.3",
-    "semantic-release-monorepo": "^7.0.5"
-  },
-  "devDependencies": {
-    "eslint": "^8.16.0"
-  },
   "author": "singularIT GmbH",
   "license": "MIT",
+  "homepage": "https://github.com/singularit-de/eslint-config",
   "bugs": {
     "url": "https://github.com/singularit-de/eslint-config/issues"
   },
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
   "files": [
     "index.js",
     "*.md"
   ],
+  "scripts": {
+    "release": "semantic-release -e semantic-release-monorepo"
+  },
   "peerDependencies": {
     "eslint": ">=7.4.0",
+    "eslint-import-resolver-typescript": "^3.2.1",
     "typescript": ">=3.9"
   },
-  "homepage": "https://github.com/singularit-de/eslint-config",
+  "dependencies": {
+    "@singularit/eslint-config-basic": "*",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "semantic-release": "^19.0.3",
+    "semantic-release-monorepo": "^7.0.5"
+  },
   "publishConfig": {
     "access": "public"
   }

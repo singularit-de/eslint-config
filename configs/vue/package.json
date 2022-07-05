@@ -2,6 +2,15 @@
   "name": "@singularit/eslint-config-vue",
   "version": "0.0.0",
   "description": "",
+  "author": "singularIT GmbH",
+  "license": "MIT",
+  "homepage": "https://github.com/singularit-de/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/singularit-de/eslint-config/issues"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
   "main": "index.js",
   "files": [
     "index.js",
@@ -14,23 +23,14 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
+    "@singularit/eslint-config-typescript": "*",
     "eslint-plugin-vue": "^9.0.1",
     "semantic-release": "^19.0.3",
-    "semantic-release-monorepo": "^7.0.5",
-    "@singularit/eslint-config-typescript": "*"
+    "semantic-release-monorepo": "^7.0.5"
   },
   "devDependencies": {
     "eslint": "^8.16.0"
   },
-  "keywords": [
-    "eslint-config"
-  ],
-  "author": "singularIT GmbH",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/singularit-de/eslint-config/issues"
-  },
-  "homepage": "https://github.com/singularit-de/eslint-config#readme",
   "publishConfig": {
     "access": "public"
   }
