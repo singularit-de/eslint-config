@@ -22,9 +22,7 @@
   },
   "dependencies": {
     "@singularit/eslint-config-typescript": "*",
-    "eslint-plugin-vue": "^9.0.1",
-    "semantic-release": "^19.0.3",
-    "semantic-release-monorepo": "^7.0.5"
+    "eslint-plugin-vue": "^9.0.1"
   },
   "devDependencies": {
     "eslint": "^8.16.0"

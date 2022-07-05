@@ -32,8 +32,6 @@
     "eslint-plugin-unicorn": "^42.0.0",
     "eslint-plugin-yml": "^1.0.0",
     "jsonc-eslint-parser": "^2.1.0",
-    "semantic-release": "^19.0.3",
-    "semantic-release-monorepo": "^7.0.5",
     "yaml-eslint-parser": "^1.0.1"
   },
   "devDependencies": {
