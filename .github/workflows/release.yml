@@ -56,7 +56,10 @@ jobs:
           npx --workspace=@singularit/eslint-config-vue semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-vue in workspaces
         run: |
+          echo $(cat configs/all/package.json)
+          echo $(cat configs/vue/package.json)
           npm up @singularit/eslint-config-vue --save
+          echo $(cat configs/all/package.json)
           echo 'git status'
           git status
       - uses: EndBug/add-and-commit@v9
