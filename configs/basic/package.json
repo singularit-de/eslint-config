@@ -2,12 +2,26 @@
   "name": "@singularit/eslint-config-basic",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "author": "singularIT GmbH",
+  "license": "MIT",
+  "homepage": "https://github.com/singularit-de/eslint-config",
+  "bugs": {
+    "url": "https://github.com/singularit-de/eslint-config/issues"
+  },
   "keywords": [
     "eslint-config"
   ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "*.md",
+    "standard.js"
+  ],
   "scripts": {
     "release": "semantic-release -e semantic-release-monorepo"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
   },
   "dependencies": {
     "eslint-plugin-eslint-comments": "^3.2.0",
@@ -20,26 +34,13 @@
     "eslint-plugin-unicorn": "^42.0.0",
     "eslint-plugin-yml": "^1.0.0",
     "jsonc-eslint-parser": "^2.1.0",
-    "yaml-eslint-parser": "^1.0.1",
     "semantic-release": "^19.0.3",
-    "semantic-release-monorepo": "^7.0.5"
+    "semantic-release-monorepo": "^7.0.5",
+    "yaml-eslint-parser": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "^8.16.0"
   },
-  "author": "singularIT GmbH",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/singularit-de/eslint-config/issues"
-  },
-  "files": [
-    "index.js",
-    "*.md"
-  ],
-  "peerDependencies": {
-    "eslint": ">=7.4.0"
-  },
-  "homepage": "https://github.com/singularit-de/eslint-config",
   "publishConfig": {
     "access": "public"
   }
