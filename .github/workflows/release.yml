@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-#        with:
-#          fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
           node-version: 16.15.0
@@ -27,10 +25,10 @@ jobs:
       - name: 👾 Update @singularit/eslint-config-basic in workspaces
         run: |
           npm up @singularit/eslint-config-basic --save
-#      - uses: EndBug/add-and-commit@v9
-#        with:
-#          default_author: github_actions
-#          message: 'chore(deps): update @singularit/eslint-config-basic'
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'chore(deps): bump @singularit/eslint-config-basic'
       - name: 🚀 Release @singularit/eslint-config-typescript
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -40,10 +38,10 @@ jobs:
       - name: 👾 Update @singularit/eslint-config-typescript in workspaces
         run: |
           npm up @singularit/eslint-config-typescript --save
-#      - uses: EndBug/add-and-commit@v9
-#        with:
-#          default_author: github_actions
-#          message: 'chore(deps): update @singularit/eslint-config-typescript'
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'chore(deps): bump @singularit/eslint-config-typescript'
       - name: 🚀 Release @singularit/eslint-config-vue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -53,10 +51,10 @@ jobs:
       - name: 👾 Update @singularit/eslint-config-vue in workspaces
         run: |
           npm up @singularit/eslint-config-vue --save
-#      - uses: EndBug/add-and-commit@v9
-#        with:
-#          default_author: github_actions
-#          message: 'chore(deps): update @singularit/eslint-config-vue'
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'chore(deps): bump @singularit/eslint-config-vue'
       - name: 🚀 Release @singularit/eslint-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -66,7 +64,7 @@ jobs:
       - name: 👾 Update @singularit/eslint-config in workspaces
         run: |
           npm up @singularit/eslint-config --save
-#      - uses: EndBug/add-and-commit@v9
-#        with:
-#          default_author: github_actions
-#          message: 'chore(deps): update @singularit/eslint-config'
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'chore(deps): bump @singularit/eslint-config'

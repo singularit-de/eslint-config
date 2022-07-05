@@ -11,7 +11,9 @@
   "keywords": [
     "eslint-config",
     "eslint",
-    "singularIT"
+    "singularIT",
+    "vue",
+    "typescript"
   ],
   "main": "index.js",
   "files": [

@@ -15,9 +15,9 @@
   ],
   "main": "index.js",
   "files": [
+    "standard.js",
     "index.js",
-    "*.md",
-    "standard.js"
+    "*.md"
   ],
   "peerDependencies": {
     "eslint": ">=7.4.0"
