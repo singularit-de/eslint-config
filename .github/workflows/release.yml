@@ -26,7 +26,7 @@ jobs:
         run: npm up @singularit/eslint-config-basic --save
       - uses: EndBug/add-and-commit@v9
         with:
-          default_author: SingularIT Bot
+          default_author: github_actions
           commit_message: "chore(deps): update @singularit/eslint-config-basic"
       - name: 🚀 Release @singularit/eslint-config-typescript
         env:
@@ -38,7 +38,7 @@ jobs:
         run: npm up @singularit/eslint-config-typescript --save
       - uses: EndBug/add-and-commit@v9
         with:
-          default_author: SingularIT Bot
+          default_author: github_actions
           commit_message: "chore(deps): update @singularit/eslint-config-typescript"
       - name: 🚀 Release @singularit/eslint-config-vue
         env:
@@ -50,7 +50,7 @@ jobs:
         run: npm up @singularit/eslint-config-vue --save
       - uses: EndBug/add-and-commit@v9
         with:
-          default_author: SingularIT Bot
+          default_author: github_actions
           commit_message: "chore(deps): update @singularit/eslint-config-vue"
       - name: 🚀 Release @singularit/eslint-config
         env:
@@ -62,5 +62,5 @@ jobs:
         run: npm up @singularit/eslint-config --save
       - uses: EndBug/add-and-commit@v9
         with:
-          default_author: SingularIT Bot
+          default_author: github_actions
           commit_message: "chore(deps): update @singularit/eslint-config"
