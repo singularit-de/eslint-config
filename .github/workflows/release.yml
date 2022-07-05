@@ -22,25 +22,25 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npx --workspace=@singularit/eslint-config-basic semantic-release -e semantic-release-monorepo
-          npm up @singularit/eslint-config-basic
+          npm up @singularit/eslint-config-basic --save
       - name: 🚀 Release @singularit/eslint-config-typescript
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npx --workspace=@singularit/eslint-config-typescript semantic-release -e semantic-release-monorepo
-          npm up @singularit/eslint-config-typescript
+          npm up @singularit/eslint-config-typescript --save
       - name: 🚀 Release @singularit/eslint-config-vue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npx --workspace=@singularit/eslint-config-vue semantic-release -e semantic-release-monorepo
-          npm up @singularit/eslint-config-vue
+          npm up @singularit/eslint-config-vue --save
       - name: 🚀 Release @singularit/eslint-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npx --workspace=@singularit/eslint-config semantic-release -e semantic-release-monorepo
-          npm up @singularit/eslint-config
+          npm up @singularit/eslint-config --save
