@@ -9,7 +9,8 @@
     "url": "https://github.com/singularit-de/eslint-config/issues"
   },
   "keywords": [
-    "eslint-config"
+    "eslint-config",
+    "eslint"
   ],
   "main": "index.js",
   "files": [
