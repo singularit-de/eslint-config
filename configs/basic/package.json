@@ -17,9 +17,6 @@
     "*.md",
     "standard.js"
   ],
-  "scripts": {
-    "release": "semantic-release -e semantic-release-monorepo"
-  },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
