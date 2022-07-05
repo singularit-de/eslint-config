@@ -16,9 +16,6 @@
     "index.js",
     "*.md"
   ],
-  "scripts": {
-    "release": "semantic-release -e semantic-release-monorepo"
-  },
   "peerDependencies": {
     "eslint": ">=7.4.0",
     "eslint-import-resolver-typescript": "^3.2.1",
