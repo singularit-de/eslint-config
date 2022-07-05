@@ -42,7 +42,8 @@
           "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ]
-    ]
+    ],
+    "dryRun": true
   },
   "publishConfig": {
     "access": "public"
