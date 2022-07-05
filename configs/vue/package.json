@@ -2,7 +2,7 @@
   "name": "@singularit/eslint-config-vue",
   "version": "0.0.0",
   "description": "@singularit/eslint-config-vue",
-  "author": "singularIT GmbH <info@singular-it.de> (https://singular-it.de)",
+  "author": "singularIT GmbH <info@singular-it.de> (https://www.singular-it.de)",
   "license": "MIT",
   "homepage": "https://github.com/singularit-de/eslint-config#readme",
   "bugs": {
