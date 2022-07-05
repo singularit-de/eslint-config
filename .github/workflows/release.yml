@@ -12,11 +12,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+#        with:
+#          fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.13.1
+          node-version: 16.15.0
       - run: npm ci
       - name: 🚀 Release @singularit/eslint-config-basic
         env:
@@ -27,12 +27,10 @@ jobs:
       - name: 👾 Update @singularit/eslint-config-basic in workspaces
         run: |
           npm up @singularit/eslint-config-basic --save
-          echo 'git status'
-          git status
-      - uses: EndBug/add-and-commit@v9
-        with:
-          default_author: github_actions
-          message: 'chore(deps): update @singularit/eslint-config-basic'
+#      - uses: EndBug/add-and-commit@v9
+#        with:
+#          default_author: github_actions
+#          message: 'chore(deps): update @singularit/eslint-config-basic'
       - name: 🚀 Release @singularit/eslint-config-typescript
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -42,12 +40,10 @@ jobs:
       - name: 👾 Update @singularit/eslint-config-typescript in workspaces
         run: |
           npm up @singularit/eslint-config-typescript --save
-          echo 'git status'
-          git status
-      - uses: EndBug/add-and-commit@v9
-        with:
-          default_author: github_actions
-          message: 'chore(deps): update @singularit/eslint-config-typescript'
+#      - uses: EndBug/add-and-commit@v9
+#        with:
+#          default_author: github_actions
+#          message: 'chore(deps): update @singularit/eslint-config-typescript'
       - name: 🚀 Release @singularit/eslint-config-vue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -56,16 +52,11 @@ jobs:
           npx --workspace=@singularit/eslint-config-vue semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-vue in workspaces
         run: |
-          echo $(cat configs/all/package.json)
-          echo $(cat configs/vue/package.json)
           npm up @singularit/eslint-config-vue --save
-          echo $(cat configs/all/package.json)
-          echo 'git status'
-          git status
-      - uses: EndBug/add-and-commit@v9
-        with:
-          default_author: github_actions
-          message: 'chore(deps): update @singularit/eslint-config-vue'
+#      - uses: EndBug/add-and-commit@v9
+#        with:
+#          default_author: github_actions
+#          message: 'chore(deps): update @singularit/eslint-config-vue'
       - name: 🚀 Release @singularit/eslint-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -75,9 +66,7 @@ jobs:
       - name: 👾 Update @singularit/eslint-config in workspaces
         run: |
           npm up @singularit/eslint-config --save
-          echo 'git status'
-          git status
-      - uses: EndBug/add-and-commit@v9
-        with:
-          default_author: github_actions
-          message: 'chore(deps): update @singularit/eslint-config'
+#      - uses: EndBug/add-and-commit@v9
+#        with:
+#          default_author: github_actions
+#          message: 'chore(deps): update @singularit/eslint-config'
