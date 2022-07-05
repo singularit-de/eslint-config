@@ -9,9 +9,6 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        config: [ '@singularit/eslint-config-basic', '@singularit/eslint-config-basic', '@singularit/eslint-config-typescript', '@singularit/eslint-config-vue', '@singularit/eslint-config' ]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,9 +16,30 @@ jobs:
         with:
           node-version: 16.13.1
       - run: npm ci
-      - name: 🚀 Release ${{ matrix.config }}
+      - name: 🚀 Release @singularit/eslint-config-basic
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npx --workspace=${{ matrix.config }} semantic-release -e semantic-release-monorepo
+          npx --workspace=@singularit/eslint-config-basic semantic-release -e semantic-release-monorepo
+      - run: npm i
+      - name: 🚀 Release @singularit/eslint-config-typescript
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npx --workspace=@singularit/eslint-config-typescript semantic-release -e semantic-release-monorepo
+      - run: npm i
+      - name: 🚀 Release @singularit/eslint-config-vue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npx --workspace=@singularit/eslint-config-vue semantic-release -e semantic-release-monorepo
+      - run: npm i
+      - name: 🚀 Release @singularit/eslint-config
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npx --workspace=@singularit/eslint-config semantic-release -e semantic-release-monorepo
