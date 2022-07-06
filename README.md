@@ -13,15 +13,15 @@
 
 ### Install
 
-```shell
-npm install @singularit/eslint-config -D
+```bash
+npm install eslint @singularit/eslint-config -D
 ```
 
-### Config .eslintrc
+### Config .eslintrc.js
 
 ```json
 {
-  "extends": "@singularit" // or e.g. @singularit/eslint-config-vue
+  "extends": "@singularit"
 }
 ```
 
@@ -34,6 +34,36 @@ For example:
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   }
+}
+```
+
+### Githooks with `husky` and `lint-staged`
+
+1. Install and setup husky
+```bash
+npx husky-init && npm install
+```
+
+2. Add `lint-staged` to pre-commit hook
+```diff
+# .husky/pre-commit
+
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+- npm test
++ npx lint-staged
+```
+
+3. Configure `lint-staged`
+```diff
+// package.json
+{
+  ...
++ "lint-staged": {
++   "*.{js,jsx,ts,tsx,vue,md,yml,yaml}": "eslint --fix --max-warnings 0"
++ }
+  ...
 }
 ```
 
