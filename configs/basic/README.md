@@ -10,9 +10,9 @@ npm install eslint @singularit/eslint-config-basic -D
 
 ### Config .eslintrc.js
 
-```json
-{
-  "extends": "@singularit/eslint-config-basic"
+```javascript
+module.exports = {
+    extends: "@singularit"
 }
 ```
 
