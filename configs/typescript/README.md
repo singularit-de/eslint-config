@@ -56,7 +56,7 @@ npx husky-init && npm install
 {
   ...
 + "lint-staged": {
-+   "*.{js,jsx,ts,tsx,vue,md,yml,yaml}": "eslint --fix --max-warnings 0"
++   "*.{js,jsx,ts,tsx,md,yml,yaml}": "eslint --fix --max-warnings 0"
 + }
   ...
 }
