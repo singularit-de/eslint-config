@@ -10,9 +10,9 @@ npm install eslint @singularit/eslint-config-vue -D
 
 ### Config .eslintrc.js
 
-```json
-{
-  "extends": "@singularit/eslint-config-vue"
+```javascript
+module.exports = {
+    extends: "@singularit"
 }
 ```
 
