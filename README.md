@@ -67,6 +67,19 @@ npx husky-init && npm install
 }
 ```
 
+### Automatic fix-on-save in vscode
+
+1. Install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+2. Add file .vscode/settings.json or add to file if it already exists
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
+
 ## License
 MIT
 
