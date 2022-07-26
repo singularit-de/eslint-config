@@ -2,12 +2,13 @@
 
 ## Configs
 
-| Config                                     | Version                                                                                                                                                         | Description                                 |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [`@singularit/eslint-config`]()            | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config)                       | extends @singularit/eslint-config-vue       |
-| [`@singularit/eslint-config-basic`]()      | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-basic?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-basic)           | TODO                              |
-| [`@singularit/eslint-config-typescript`]() | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-typescript?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-typescript) | extends @singularit/eslint-config-basic     |
-| [`@singularit/eslint-config-vue`]()        | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-vue?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-vue)               | extends @singularit/eslint-config-typescript |
+| Config                                                                   | Version                                                                                                                                                         | Description                                                                                                                           |
+|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| [`@singularit/eslint-config`](./configs/all/README.md)                   | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config)                       | extends [`@singularit/eslint-config-vue`](./configs/vue/README.md) and [`@singularit/eslint-config-react`](./configs/react/README.md) |
+| [`@singularit/eslint-config-basic`](./configs/basic/README.md)           | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-basic?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-basic)           |                                                                                                                                       |
+| [`@singularit/eslint-config-typescript`](./configs/typescript/README.md) | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-typescript?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-typescript) | extends [`@singularit/eslint-config-basic`](./configs/basic/README.md)                                                                |
+| [`@singularit/eslint-config-vue`](./configs/vue/README.md)               | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-vue?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-vue)               | extends [`@singularit/eslint-config-typescript`](./configs/typescript/README.md)                                                      |
+| [`@singularit/eslint-config-react`](./configs/react/README.md)           | [![npm](https://img.shields.io/npm/v/@singularit/eslint-config-react?color=a1b858&label=)](https://npmjs.com/package/@singularit/eslint-config-react)           | extends [`@singularit/eslint-config-typescript`](./configs/typescript/README.md)                                                      |
 
 ## Usage
 
@@ -19,13 +20,14 @@ npm install eslint @singularit/eslint-config -D
 
 ### Config .eslintrc.js
 
-```json
-{
-  "extends": "@singularit"
+```javascript
+module.exports = {
+  extends: "@singularit"
 }
 ```
 
 ### Add script for package.json
+
 For example:
 
 ```json
@@ -40,11 +42,13 @@ For example:
 ### Githooks with `husky` and `lint-staged`
 
 1. Install and setup husky
+
 ```bash
 npx husky-init && npm install
 ```
 
 2. Add `lint-staged` to pre-commit hook
+
 ```diff
 # .husky/pre-commit
 
@@ -56,6 +60,7 @@ npx husky-init && npm install
 ```
 
 3. Configure `lint-staged`
+
 ```diff
 // package.json
 {
@@ -81,6 +86,7 @@ npx husky-init && npm install
 ```
 
 ## License
+
 MIT
 
 ## Credits
