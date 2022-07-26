@@ -55,6 +55,19 @@ jobs:
         with:
           default_author: github_actions
           message: 'chore(deps): bump @singularit/eslint-config-vue'
+      - name: 🚀 Release @singularit/eslint-config-react
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npx --workspace=@singularit/eslint-config-react semantic-release -e semantic-release-monorepo
+      - name: 👾 Update @singularit/eslint-config-react in workspaces
+        run: |
+          npm up @singularit/eslint-config-react --save
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'chore(deps): bump @singularit/eslint-config-react'
       - name: 🚀 Release @singularit/eslint-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
