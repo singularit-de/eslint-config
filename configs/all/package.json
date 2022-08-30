@@ -13,7 +13,8 @@
     "eslint",
     "singularIT",
     "vue",
-    "typescript"
+    "typescript",
+    "react"
   ],
   "main": "index.js",
   "files": [
