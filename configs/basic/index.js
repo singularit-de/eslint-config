@@ -256,6 +256,10 @@ module.exports = {
         balanced: true,
       },
     }],
+    //consistency
+    'array-element-newline':["error", "consistent"],
+    'object-property-newline': ['error','allowMultiplePropertiesPerLine'],
+
     // best-practice
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
