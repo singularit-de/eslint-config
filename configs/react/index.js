@@ -20,6 +20,14 @@ module.exports = {
       files: ['**/*.tsx'],
       rules: {
         'react/prop-types': 'off', // Turn off propTypes validation in TSX files
+        '@typescript-eslint/comma-dangle': ['error', {
+          generics: 'always', // prevent confusing generic syntax as tsx
+          arrays: 'always-multiline',
+          objects: 'always-multiline',
+          imports: 'always-multiline',
+          exports: 'always-multiline',
+          functions: 'always-multiline',
+        }],
       },
     },
   ],
