@@ -68,6 +68,7 @@ module.exports = {
     'react/prefer-es6-class': ['error', 'always'], // Prefer ES6 class over React.createClass
     'react/sort-comp': 'error', // Enforce sorted methods in class components
     // JSX specific rules
+    'jsx-quotes': ['error', 'prefer-double'],
     'react/jsx-boolean-value': 'error', // Enforce boolean attributes notation in JSX
     'react/jsx-closing-bracket-location': 'error', // Validate closing bracket location in JSX
     'react/jsx-closing-tag-location': 'error', // Validate closing tag location for multiline JSX
