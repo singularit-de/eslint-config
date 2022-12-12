@@ -12,7 +12,7 @@ module.exports = {
   ],
   settings: {
     react: {
-      version: 'latest',
+      version: 'detect',
     },
   },
   overrides: [
@@ -20,6 +20,14 @@ module.exports = {
       files: ['**/*.tsx'],
       rules: {
         'react/prop-types': 'off', // Turn off propTypes validation in TSX files
+        '@typescript-eslint/comma-dangle': ['error', {
+          generics: 'always', // prevent confusing generic syntax as tsx
+          arrays: 'always-multiline',
+          objects: 'always-multiline',
+          imports: 'always-multiline',
+          exports: 'always-multiline',
+          functions: 'always-multiline',
+        }],
       },
     },
   ],
@@ -60,6 +68,7 @@ module.exports = {
     'react/prefer-es6-class': ['error', 'always'], // Prefer ES6 class over React.createClass
     'react/sort-comp': 'error', // Enforce sorted methods in class components
     // JSX specific rules
+    'jsx-quotes': ['error', 'prefer-double'],
     'react/jsx-boolean-value': 'error', // Enforce boolean attributes notation in JSX
     'react/jsx-closing-bracket-location': 'error', // Validate closing bracket location in JSX
     'react/jsx-closing-tag-location': 'error', // Validate closing tag location for multiline JSX
