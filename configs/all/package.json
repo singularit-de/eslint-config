@@ -14,7 +14,8 @@
     "singularIT",
     "vue",
     "typescript",
-    "react"
+    "react",
+    "javascript"
   ],
   "main": "index.js",
   "files": [
