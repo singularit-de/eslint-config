@@ -28,7 +28,7 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
-          message: 'chore(deps): bump @singularit/eslint-config-basic'
+          message: 'feat(deps): bump @singularit/eslint-config-basic'
       - name: 🚀 Release @singularit/eslint-config-typescript
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -41,7 +41,7 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
-          message: 'chore(deps): bump @singularit/eslint-config-typescript'
+          message: 'feat(deps): bump @singularit/eslint-config-typescript'
       - name: 🚀 Release @singularit/eslint-config-vue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -54,7 +54,7 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
-          message: 'chore(deps): bump @singularit/eslint-config-vue'
+          message: 'feat(deps): bump @singularit/eslint-config-vue'
       - name: 🚀 Release @singularit/eslint-config-react
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -67,7 +67,7 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
-          message: 'chore(deps): bump @singularit/eslint-config-react'
+          message: 'feat(deps): bump @singularit/eslint-config-react'
       - name: 🚀 Release @singularit/eslint-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -80,4 +80,4 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
-          message: 'chore(deps): bump @singularit/eslint-config'
+          message: 'feat(deps): bump @singularit/eslint-config'
