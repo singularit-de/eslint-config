@@ -256,9 +256,9 @@ module.exports = {
         balanced: true,
       },
     }],
-    //consistency
-    'array-element-newline':["error", "consistent"],
-    'object-property-newline': ['error','allowMultiplePropertiesPerLine'],
+    // consistency
+    'array-element-newline': ['error', 'consistent'],
+    'object-property-newline': ['error', {allowMultiplePropertiesPerLine: true}],
 
     // best-practice
     'array-callback-return': 'error',
