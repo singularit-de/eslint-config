@@ -8,7 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
-    '@singularit',
+    '@singularit/eslint-config-typescript',
   ],
   settings: {
     react: {
