@@ -1,6 +1,6 @@
 {
   "name": "@singularit/eslint-config-react",
-  "version": "0.0.1",
+  "version": "1.0.0-beta.2",
   "description": "@singularit/eslint-config-react",
   "author": "singularIT GmbH <info@singular-it.de> (https://www.singular-it.de)",
   "license": "MIT",
