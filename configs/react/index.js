@@ -1,4 +1,8 @@
-module.exports = {
+const { isPackageExists } = require('local-pkg')
+
+const react = isPackageExists('react')
+
+module.exports = react ? {
   plugins: [
     'react',
     'react-hooks',
@@ -115,5 +119,5 @@ module.exports = {
       },
     ],
   },
-}
+} : {}
 
