@@ -1,4 +1,7 @@
-module.exports = {
+const {isPackageExists} = require("local-pkg");
+const vue = isPackageExists('vue')
+
+module.exports = vue ? {
   overrides: [
     {
       files: ['*.vue'],
@@ -13,4 +16,4 @@ module.exports = {
     '@singularit/eslint-config-typescript',
   ],
   rules: {},
-}
+} : {}

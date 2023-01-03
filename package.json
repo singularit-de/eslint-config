@@ -29,5 +29,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "local-pkg": "^0.4.2"
   }
 }
