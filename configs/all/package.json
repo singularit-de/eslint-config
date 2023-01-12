@@ -26,7 +26,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@singularit/eslint-config-react": "*",
+    "@singularit/eslint-config-react": "^1.0.0-beta.3",
     "@singularit/eslint-config-vue": "^1.2.0-beta.1",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
