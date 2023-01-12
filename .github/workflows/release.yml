@@ -14,14 +14,14 @@ jobs:
         uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.15.0
+          node-version: 18
       - run: npm i
       - name: 🚀 Release @singularit/eslint-config-basic
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npx --workspace=@singularit/eslint-config-basic semantic-release@19 -e semantic-release-monorepo
+          npx --workspace=@singularit/eslint-config-basic semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-basic in workspaces
         run: |
           npm i @singularit/eslint-config-basic@${{(github.ref == 'refs/heads/beta' &&'beta') || 'latest'}} --workspace=typescript --save
@@ -35,7 +35,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npx --workspace=@singularit/eslint-config-typescript semantic-release@19 -e semantic-release-monorepo
+          npx --workspace=@singularit/eslint-config-typescript semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-typescript in workspaces
         run: |
           npm i @singularit/eslint-config-typescript@${{(github.ref == 'refs/heads/beta' &&'beta') || 'latest'}} --workspace=react --workspace=vue --save
@@ -49,7 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npx --workspace=@singularit/eslint-config-vue semantic-release@19 -e semantic-release-monorepo
+          npx --workspace=@singularit/eslint-config-vue semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-vue in workspaces
         run: |
           npm i @singularit/eslint-config-vue@${{(github.ref == 'refs/heads/beta' &&'beta') || 'latest'}} --workspace=all --save
@@ -63,7 +63,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npx --workspace=@singularit/eslint-config-react semantic-release@19 -e semantic-release-monorepo
+          npx --workspace=@singularit/eslint-config-react semantic-release -e semantic-release-monorepo
       - name: 👾 Update @singularit/eslint-config-react in workspaces
         run: |
           npm i @singularit/eslint-config-react@${{(github.ref == 'refs/heads/beta' &&'beta') || 'latest'}} --workspace=all --save
@@ -77,7 +77,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npx --workspace=@singularit/eslint-config semantic-release@19 -e semantic-release-monorepo
+          npx --workspace=@singularit/eslint-config semantic-release -e semantic-release-monorepo
 #      - name: 👾 Update @singularit/eslint-config in workspaces
 #        run: |
 #          npm i @singularit/eslint-config --save
