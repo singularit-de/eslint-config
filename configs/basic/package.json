@@ -11,6 +11,7 @@
   "keywords": [
     "eslint-config",
     "eslint",
+    "javascript",
     "singularIT"
   ],
   "main": "index.js",
