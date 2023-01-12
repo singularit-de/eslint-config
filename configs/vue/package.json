@@ -23,7 +23,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@singularit/eslint-config-typescript": "*",
+    "@singularit/eslint-config-typescript": "^1.1.4-beta.2",
     "eslint-plugin-vue": "^9.0.1",
     "local-pkg": "^0.4.2"
   },
